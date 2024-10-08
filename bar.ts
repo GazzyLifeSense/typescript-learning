@@ -1,1 +1,1 @@
-export const bar = foo
+const bar = 123
