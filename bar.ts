@@ -1,1 +1,2 @@
-const bar = 123
+import { foo } from "./foo"
+export const bar = foo
