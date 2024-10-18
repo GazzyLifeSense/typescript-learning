@@ -54,3 +54,14 @@ interface ArrStr {
 
 const arr1 = { a: 1, '1': 2, length: 3}
 console.log(arr1, arr1[1])
+
+class Foo1 {
+  foo: number; // 我们想要捕获的类型
+}
+
+declare let _foo: Foo1;
+_foo.foo = 1
+
+// 与之前做法相同
+let bar: typeof _foo.foo;
+console.log(_foo.foo)

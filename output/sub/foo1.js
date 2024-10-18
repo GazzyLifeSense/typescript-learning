@@ -45,3 +45,12 @@ var color = Color.Red;
 console.log(status, color);
 var arr1 = { a: 1, '1': 2, length: 3 };
 console.log(arr1, arr1[1]);
+var Foo1 = /** @class */ (function () {
+    function Foo1() {
+    }
+    return Foo1;
+}());
+_foo.foo = 1;
+// 与之前做法相同
+var bar;
+console.log(_foo.foo);
